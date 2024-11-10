@@ -16,17 +16,16 @@ This project focuses on building a regression model to predict crop yield ('yiel
 ```
 M5-H2-Regression-Competition/
 ├── notebooks/
-│   ├── custom_transformers.py   # transformers class for feature engenering
 │   ├── EDA.ipynb                # Exploratory Data Analysis
 │   ├── Model.ipynb              # Model training and evaluation
-│   └── EXPLAIN_model.pkl        # Model explainability and interpretation
+│   └── EXPLAIN_model.ipynb      # Model explainability and interpretation
 └── data/
 │   ├── train.csv                # train.csv model trained datset
 │   └── test.csv                 # test csv
 ├── README.md                    # Project documentation
 ├── LICENSE                      # Project license (MIT)
 ├── requirements.txt             # Required Python packages
-├── model.joblib                 # Final model
+├── model.pkl                    # Final model
 ```
 
 ## Installation
@@ -53,21 +52,23 @@ M5-H2-Regression-Competition/
 
 ### Loading and Using the Model
 
-To use the model stored in `model.joblib`, follow these steps:
+To use the model stored in `model.pkl`, follow these steps:
 
 ```python
+import dill as pickle
 import joblib
-from notebooks.custom_transformers import ColumnSelector, FeatureEngineer, OutlierReplacer
 import pandas as pd
 
 # Load the trained model
-model = joblib.load('model.joblib')
+with open('model.pkl', 'rb') as f:
+    loaded_model = pickle.load(f)
 
 # Prepare your test data (ensure it matches the training data format)
 test_data = pd.read_csv('data/test.csv')
 
 # Make predictions
-predictions = model.predict(test_data)
+predictions = loaded_model.predict(test_data)
+print(predictions)
 ```
 
 ## Model Details
@@ -137,7 +138,7 @@ You can w model explener in `notebook/model_explain.ipynb`
 
 ## Usage
 
-The model is pre-trained and saved as `model.joblib`. Load and run it directly to make predictions on new data without retraining.
+The model is pre-trained and saved as `model.pkl`. Load and run it directly to make predictions on new data without retraining.
 
 ## Results
 
