@@ -19,7 +19,7 @@ M5-H2-Regression-Competition/
 │   ├── custom_transformers.py   # transformers class for feature engenering
 │   ├── EDA.ipynb                # Exploratory Data Analysis
 │   ├── Model.ipynb              # Model training and evaluation
-│   └── EXPLAIN_model.ipynb      # Model explainability and interpretation
+│   └── EXPLAIN_model.pkl        # Model explainability and interpretation
 └── data/
 │   ├── train.csv                # train.csv model trained datset
 │   └── test.csv                 # test csv
