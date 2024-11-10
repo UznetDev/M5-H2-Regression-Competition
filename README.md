@@ -64,6 +64,7 @@ with open('model.pkl', 'rb') as f:
     model = pickle.load(f)
 
 # Prepare your test data (ensure it matches the training data format)
+# test_data must have ['seeds', 'fruitmass', 'fruitset', 'AverageOfUpperTRange']
 test_data = pd.read_csv('data/test.csv')
 
 # Make predictions
