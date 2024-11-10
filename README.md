@@ -116,6 +116,22 @@ These values were chosen to maximize model performance while preventing overfitt
 
 The model was evaluated using standard regression metrics, including RMSE, R^2 and MAE. Details on evaluation and insights are in `notebook/Model.ipynb`.
 
+### Model Explanation
+
+To understand this model, we use two powerful model explainers: **SHAP** and **Permutation Importance**.
+
+1. **Permutation Importance**:
+   - **Purpose**: Permutation importance measures the impact of each feature on the model’s accuracy. It works by shuffling each feature and observing how much the model’s accuracy decreases. This technique helps identify which features are most crucial to the overall performance of the model.
+   - **Usage**: We calculate the importance of each feature using `permutation_importance` from `sklearn.inspection`.
+   - **Plot**: The permutation importance plot ranks features by their influence on model accuracy, making it easy to see which features are essential for the model’s performance.
+
+2. **SHAP (SHapley Additive exPlanations)**:
+   - **Purpose**: SHAP values explain individual predictions by showing the impact of each feature on the model’s output. This method highlights how each feature contributes to specific predictions.
+   - **Usage**: We use `shap.TreeExplainer` to analyze our model, showing the effect each feature has on the model output.
+   - **Plot**: The SHAP summary plot provides a bar chart, showing the average importance of each feature across all predictions, offering insights into which features are most influential.
+
+You can w model explener in `notebook/model_explain.ipynb`
+
 ## Usage
 
 The model is pre-trained and saved as `model.joblib`. Load and run it directly to make predictions on new data without retraining.
