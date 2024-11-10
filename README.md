@@ -26,6 +26,7 @@ M5-H2-Regression-Competition/
 ├── README.md                    # Project documentation
 ├── LICENSE                      # Project license (MIT)
 ├── requirements.txt             # Required Python packages
+├── model.joblib                 # Final model
 ```
 
 ## Installation
