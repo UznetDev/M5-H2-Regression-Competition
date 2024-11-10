@@ -15,7 +15,7 @@ This project focuses on building a regression model to predict crop yield ('yiel
 
 ```
 M5-H2-Regression-Competition/
-├── notebook/
+├── notebooks/
 │   ├── EDA.ipynb             # Exploratory Data Analysis
 │   ├── Model.ipynb           # Model training and evaluation
 │   └── EXPLAIN_model.ipynb   # Model explainability and interpretation
