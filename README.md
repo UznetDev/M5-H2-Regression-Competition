@@ -57,6 +57,7 @@ To use the model stored in `model.joblib`, follow these steps:
 
 ```python
 import joblib
+from notebooks.custom_transformers import ColumnSelector, FeatureEngineer, OutlierReplacer
 import pandas as pd
 
 # Load the trained model
