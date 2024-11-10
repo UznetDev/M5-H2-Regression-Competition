@@ -1,7 +1,5 @@
 # M5-H2-Regression-Competition
 
-GitHub Repository: [https://github.com/UznetDev/M5-H2-Regression-Competition.git](https://github.com/UznetDev/M5-H2-Regression-Competition.git)
-
 ## Project Overview
 
 This project focuses on building a regression model to predict crop yield ('yield') using a dataset with various agricultural metrics. We employ extensive data analysis, feature engineering, and model tuning to minimize the model's error. The final model is stored as a serialized object for easy reuse in production.
