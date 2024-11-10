@@ -134,7 +134,7 @@ To understand this model, we use two powerful model explainers: **SHAP** and **P
    - **Usage**: We use `shap.TreeExplainer` to analyze our model, showing the effect each feature has on the model output.
    - **Plot**: The SHAP summary plot provides a bar chart, showing the average importance of each feature across all predictions, offering insights into which features are most influential.
 
-You can understand model explener in `notebook/model_explain.ipynb`
+You can understand model in `notebook/model_explain.ipynb`
 
 ## Usage
 
