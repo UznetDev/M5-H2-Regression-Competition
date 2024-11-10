@@ -16,15 +16,16 @@ This project focuses on building a regression model to predict crop yield ('yiel
 ```
 M5-H2-Regression-Competition/
 ├── notebooks/
-│   ├── EDA.ipynb             # Exploratory Data Analysis
-│   ├── Model.ipynb           # Model training and evaluation
-│   └── EXPLAIN_model.ipynb   # Model explainability and interpretation
+│   ├── custom_transformers.py   # transformers class for feature engenering
+│   ├── EDA.ipynb                # Exploratory Data Analysis
+│   ├── Model.ipynb              # Model training and evaluation
+│   └── EXPLAIN_model.ipynb      # Model explainability and interpretation
 └── data/
-│   ├── train.csv             # train.csv model trained datset
-│   └── test.csv              # test csv
-├── README.md                 # Project documentation
-├── LICENSE                   # Project license (MIT)
-├── requirements.txt          # Required Python packages
+│   ├── train.csv                # train.csv model trained datset
+│   └── test.csv                 # test csv
+├── README.md                    # Project documentation
+├── LICENSE                      # Project license (MIT)
+├── requirements.txt             # Required Python packages
 ```
 
 ## Installation
