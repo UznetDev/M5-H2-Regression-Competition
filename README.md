@@ -18,7 +18,7 @@ M5-H2-Regression-Competition/
 ├── notebooks/
 │   ├── EDA.ipynb                # Exploratory Data Analysis
 │   ├── Model.ipynb              # Model training and evaluation
-│   └── EXPLAIN_model.ipynb      # Model explainability and interpretation
+│   └── model_explain.ipynb      # Model explainability and interpretation
 └── data/
 │   ├── train.csv                # train.csv model trained datset
 │   └── test.csv                 # test csv
