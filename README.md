@@ -61,13 +61,13 @@ import pandas as pd
 
 # Load the trained model
 with open('model.pkl', 'rb') as f:
-    loaded_model = pickle.load(f)
+    model = pickle.load(f)
 
 # Prepare your test data (ensure it matches the training data format)
 test_data = pd.read_csv('data/test.csv')
 
 # Make predictions
-predictions = loaded_model.predict(test_data)
+predictions = model.predict(test_data)
 print(predictions)
 ```
 
