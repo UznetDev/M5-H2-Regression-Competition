@@ -56,7 +56,6 @@ To use the model stored in `model.pkl`, follow these steps:
 
 ```python
 import dill as pickle
-import joblib
 import pandas as pd
 
 # Load the trained model
