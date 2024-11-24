@@ -33,7 +33,7 @@ M5-H2-Regression-Competition/
 1. Clone the repository:
 
    ```bash
-   git clone https://github.com/UznetDev/M5-H2-Regression-Competition.git
+   git clone https://github.com/UznetDev/Wild-Blueberry-Prediction.git
    ```
 
 2. Navigate to the project directory:
@@ -172,7 +172,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 If you have any questions or suggestions, please contact:
 - Email: uznetdev@gmail.com
-- GitHub Issues: [Issues section](https://github.com/UznetDev/M5-H2-Regression-Competition/issues)
+- GitHub Issues: [Issues section](https://github.com/UznetDev/Wild-Blueberry-Prediction/issues)
 - GitHub Profile: [UznetDev](https://github.com/UznetDev/)
 - Telegram: [UZNet_Dev](https://t.me/UZNet_Dev)
 - Linkedin: [Abdurakhmon Niyozaliev](https://www.linkedin.com/in/abdurakhmon-niyozaliyev-%F0%9F%87%B5%F0%9F%87%B8-66545222a/)
